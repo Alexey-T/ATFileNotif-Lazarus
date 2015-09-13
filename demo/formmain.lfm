@@ -1,0 +1,84 @@
+object fmMain: TfmMain
+  Left = 395
+  Height = 120
+  Top = 460
+  Width = 447
+  BorderStyle = bsDialog
+  Caption = 'ATFileNotif Demo'
+  ClientHeight = 120
+  ClientWidth = 447
+  Color = clBtnFace
+  Font.Color = clWindowText
+  Font.Height = -15
+  FormStyle = fsStayOnTop
+  OnCreate = FormCreate
+  OnShow = FormShow
+  LCLVersion = '1.5'
+  object Label2: TLabel
+    Left = 8
+    Height = 17
+    Top = 8
+    Width = 73
+    Caption = 'Watch file:'
+    ParentColor = False
+  end
+  object Label1: TLabel
+    Left = 8
+    Height = 17
+    Top = 56
+    Width = 60
+    Caption = 'Options:'
+    ParentColor = False
+  end
+  object Label3: TLabel
+    Left = 96
+    Height = 17
+    Top = 76
+    Width = 134
+    Caption = 'Refresh delay, msec'
+    ParentColor = False
+  end
+  object btnWatchFile: TButton
+    Left = 368
+    Height = 29
+    Top = 24
+    Width = 56
+    AutoSize = True
+    Caption = 'Watch'
+    OnClick = btnWatchFileClick
+    TabOrder = 0
+  end
+  object btnClose: TButton
+    Left = 368
+    Height = 29
+    Top = 56
+    Width = 49
+    AutoSize = True
+    Caption = 'Close'
+    OnClick = btnCloseClick
+    TabOrder = 1
+  end
+  object edFileName: TFileNameEdit
+    Left = 8
+    Height = 27
+    Top = 24
+    Width = 352
+    FilterIndex = 0
+    HideDirectories = False
+    ButtonWidth = 50
+    NumGlyphs = 1
+    MaxLength = 0
+    TabOrder = 2
+  end
+  object edDelay: TSpinEdit
+    Left = 8
+    Height = 27
+    Top = 72
+    Width = 80
+    Increment = 100
+    MaxValue = 10000
+    MinValue = 100
+    TabOrder = 3
+    Value = 1000
+  end
+end
