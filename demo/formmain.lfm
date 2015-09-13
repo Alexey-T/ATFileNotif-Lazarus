@@ -1,7 +1,7 @@
 object fmMain: TfmMain
-  Left = 395
+  Left = 151
   Height = 120
-  Top = 460
+  Top = 295
   Width = 447
   BorderStyle = bsDialog
   Caption = 'ATFileNotif Demo'
@@ -11,6 +11,7 @@ object fmMain: TfmMain
   Font.Color = clWindowText
   Font.Height = -15
   FormStyle = fsStayOnTop
+  Position = poScreenCenter
   LCLVersion = '1.5'
   object Label2: TLabel
     Left = 8
@@ -44,7 +45,7 @@ object fmMain: TfmMain
     AutoSize = True
     Caption = 'Watch'
     OnClick = btnWatchFileClick
-    TabOrder = 0
+    TabOrder = 2
   end
   object btnClose: TButton
     Left = 368
@@ -54,7 +55,7 @@ object fmMain: TfmMain
     AutoSize = True
     Caption = 'Close'
     OnClick = btnCloseClick
-    TabOrder = 1
+    TabOrder = 3
   end
   object edFileName: TFileNameEdit
     Left = 8
@@ -66,7 +67,7 @@ object fmMain: TfmMain
     ButtonWidth = 50
     NumGlyphs = 1
     MaxLength = 0
-    TabOrder = 2
+    TabOrder = 0
   end
   object edDelay: TSpinEdit
     Left = 8
@@ -76,7 +77,7 @@ object fmMain: TfmMain
     Increment = 100
     MaxValue = 10000
     MinValue = 100
-    TabOrder = 3
+    TabOrder = 1
     Value = 1000
   end
   object Notif: TATFileNotif
