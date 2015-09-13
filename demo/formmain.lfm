@@ -11,8 +11,6 @@ object fmMain: TfmMain
   Font.Color = clWindowText
   Font.Height = -15
   FormStyle = fsStayOnTop
-  OnCreate = FormCreate
-  OnShow = FormShow
   LCLVersion = '1.5'
   object Label2: TLabel
     Left = 8
@@ -80,5 +78,10 @@ object fmMain: TfmMain
     MinValue = 100
     TabOrder = 3
     Value = 1000
+  end
+  object Notif: TATFileNotif
+    OnChanged = FileChanged
+    left = 272
+    top = 56
   end
 end

@@ -19,6 +19,7 @@ Example of usage:
   end;
 }
 
+{$mode objfpc}
 {$BOOLEVAL OFF} //Short boolean evaluation.
 
 unit ATFileNotif;
@@ -100,7 +101,7 @@ begin
   begin
     Enabled:= False;
     Interval:= 1000;
-    OnTimer:= TimerTimer;
+    OnTimer:= @TimerTimer;
   end;
   FTimerBusy:= False;
 end;

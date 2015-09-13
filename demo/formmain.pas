@@ -14,6 +14,7 @@ type
   { TfmMain }
 
   TfmMain = class(TForm)
+    Notif: TATFileNotif;
     edDelay: TSpinEdit;
     edFileName: TFileNameEdit;
     Label2: TLabel;
@@ -24,11 +25,8 @@ type
     procedure btnWatchFileClick(Sender: TObject);
     procedure btnCloseClick(Sender: TObject);
     procedure FileChanged(Sender: TObject);
-    procedure FormCreate(Sender: TObject);
-    procedure FormShow(Sender: TObject);
   private
     { Private declarations }
-    Notif: TATFileNotif;
     procedure NotifyFile;
   public
     { Public declarations }
@@ -40,17 +38,6 @@ var
 implementation
 
 {$R *.lfm}
-
-procedure TfmMain.FormCreate(Sender: TObject);
-begin
-  Notif:= TATFileNotif.Create(Self);
-  Notif.OnChanged:= @FileChanged; 
-end;
-
-procedure TfmMain.FormShow(Sender: TObject);
-begin
-  //edFileName.Text:= '';
-end;
 
 procedure TfmMain.NotifyFile;
 begin
