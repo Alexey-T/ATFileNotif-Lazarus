@@ -3,7 +3,7 @@
   <Package Version="4">
     <Name Value="atfilenotif_pkg"/>
     <Type Value="RunAndDesignTime"/>
-    <Author Value="A. Torgashin"/>
+    <Author Value="Alexey Torgashin"/>
     <CompilerOptions>
       <Version Value="11"/>
       <SearchPaths>
@@ -11,7 +11,7 @@
         <UnitOutputDirectory Value="lib/$(TargetCPU)-$(TargetOS)"/>
       </SearchPaths>
     </CompilerOptions>
-    <Description Value="File change notification"/>
+    <Description Value="Component for file change notifications."/>
     <License Value="MPL 2.0, LGPL"/>
     <Version Major="1"/>
     <Files Count="2">
