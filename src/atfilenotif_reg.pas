@@ -15,6 +15,6 @@ begin
 end;
 
 initialization
-  //{$I res/icon.lrs}
+  {$I res/icon.lrs}
 
 end.
