@@ -11,7 +11,7 @@ implementation
 
 procedure Register;
 begin
-  RegisterComponents('Misc', [TATFileNotif]);
+  RegisterComponents('AT Controls', [TATFileNotif]);
 end;
 
 initialization
